@@ -11,6 +11,10 @@ int escolhaInicial = int.Parse(Console.ReadLine());
 double saldoLogado = 1412.69;
 bool continuar = true;
 
+
+/* bool registrar = true;     <---- VERIFICAR PARTE DE REGISTRO  */
+
+
     Console.Write("Digite a senha da conta (apenas números): ");
     int senhaEntrando = int.Parse(Console.ReadLine());
     Console.Write("Digite novamente a sua senha: ");
@@ -39,18 +43,17 @@ while (continuar)
         Console.WriteLine($"Você possui R${saldoLogado}");
         Console.WriteLine("Deseja voltar para o menu? (S/N)");
         string resposta = Console.ReadLine();
-        if (resposta.ToLower() != "s")
+        if (resposta.ToLower() == "s")
         {
-            continuar = false;
+            continuar = true;
         }
 
-        /*
-            if (resposta.ToLower() != "n")    <--------------------------------------------------------------------------------------------------
-            {                                                               VERIFICAR ESSA PARTE DO CODIGO
-                continuar = false;            <------------------------------------------------------------------------------------------------------
-                Console.WriteLine("Certo, fechando script...");
-            } 
-        */
+        if (resposta.ToLower() == "n")
+        {
+            Console.WriteLine("Fechando script...");
+            break;
+        }
+
     }
 
     if (escolhaLogado == 2)
@@ -92,10 +95,10 @@ while (continuar)
                     }
 
                 else
-                    {
-                        Console.WriteLine($"A quantia de R${quantiaEnviarPai} foi enviada.");
-                        saldoLogado -= quantiaEnviarPai;
-                    }
+                {
+                    Console.WriteLine($"A quantia de R${quantiaEnviarPai} foi enviada.");
+                    saldoLogado -= quantiaEnviarPai;
+                }
 
 
         if (enviarDinheiroQuem == 3)
@@ -139,8 +142,10 @@ while (continuar)
 
 }
 }
-   
-    while (escolhaInicial == 2)
+
+
+/*
+    while (registrar)
 {
 
         Console.Write("Digite seu CPF: ");
@@ -163,3 +168,4 @@ while (continuar)
         continue;
 
 }
+*/

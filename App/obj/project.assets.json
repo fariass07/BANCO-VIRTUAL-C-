@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\DEV\\P2\\App\\App.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\BANCO VIRTUAL (C#)\\App\\App.csproj",
       "projectName": "App",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\DEV\\P2\\App\\App.csproj",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\BANCO VIRTUAL (C#)\\App\\App.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Desktop\\DEV\\P2\\App\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Desktop\\BANCO VIRTUAL (C#)\\App\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
